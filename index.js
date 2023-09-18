@@ -1,6 +1,6 @@
 const { getGender, getNationality } = require('./getData.js');
 const http = require('http'); // встроенный модуль http 
-const server = http.createServer().listen(3000); // создание сервера, порт 3000
+const server = http.createServer().listen(3001); // создание сервера, порт 3000
 
 
 server.on('request', async (req, res) => { // подписка на входящий запрос 
