@@ -1,5 +1,5 @@
-import { getGender, getNationality } from './getData.mjs';
-import http from 'http'; // встроенный модуль http 
+const { getGender, getNationality } = require('./getData.js');
+const http = require('http'); // встроенный модуль http 
 const server = http.createServer().listen(3000); // создание сервера, порт 3000
 
 

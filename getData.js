@@ -2,7 +2,7 @@ const URL_GENDER = 'https://api.genderize.io';
 const URL_NATIONALITY = 'https://api.nationalize.io';
 import fetch from 'node-fetch';
 
-export function getGender(name) {
+module.exports.getGender = function (name) {
 	return fetch(`${URL_GENDER}?name=${name}`)
 		.then(response => {
 			if (response.status === 404) {
@@ -16,7 +16,7 @@ export function getGender(name) {
 		})
 }
 
-export function getNationality(name) {
+module.exports.getNationality = function (name) {
 	return fetch(`${URL_NATIONALITY}?name=${name}`)
 		.then(response => {
 			if (response.status === 404) {

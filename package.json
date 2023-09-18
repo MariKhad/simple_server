@@ -2,7 +2,7 @@
 	"name": "simple_server",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.mjs",
+	"main": "index.js",
 	"scripts": {
 		"start": "node index"
 	},
@@ -10,5 +10,8 @@
 	"license": "ISC",
 	"dependencies": {
 		"node-fetch": "^3.3.2"
+	}
+	"engines": {
+		"node": "18.x"
 	}
 }
