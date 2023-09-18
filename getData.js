@@ -1,6 +1,5 @@
 const URL_GENDER = 'https://api.genderize.io';
 const URL_NATIONALITY = 'https://api.nationalize.io';
-import fetch from 'node-fetch';
 
 module.exports.getGender = function (name) {
 	return fetch(`${URL_GENDER}?name=${name}`)
